@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: will-playground-app-service
+  name: wil-playground-app-service
   namespace: dev
 spec:
   selector:

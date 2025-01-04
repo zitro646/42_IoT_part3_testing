@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: will-playground-ingress
+  name: wil-playground-ingress
   namespace: dev
 spec:
   rules:
@@ -12,6 +12,6 @@ spec:
         pathType: Exact
         backend:
           service:
-            name: will-playground-app-service
+            name: wil-playground-app-service
             port:
               number: 8888

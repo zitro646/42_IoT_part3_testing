@@ -10,4 +10,4 @@ spec:
       targetPort: 8888
   type: LoadBalancer
   selector:
-    app: mortiz-app
+    app: mortiz

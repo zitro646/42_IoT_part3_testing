@@ -7,14 +7,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: wil-playground
+      app: mortiz-app
   template:
     metadata:
       labels:
-        app: wil-playground
+        app: mortiz-app
     spec:
       containers:
-        - name: wil-playground-app
+        - name: mortiz-app
           image: wil42/playground:v1
           ports:
             - containerPort: 8888

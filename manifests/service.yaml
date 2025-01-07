@@ -1,15 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  labels:
-  name: wil-playground-app-service
+  name: mortiz-app-service
   namespace: dev
 spec:
   ports:
     - port: 8888
       protocol: TCP
       targetPort: 8888
-      nodePort: 30002
+  type: LoadBalancer
   selector:
-    app: wil-playground
-  type: NodePort
+    app: mortiz-app

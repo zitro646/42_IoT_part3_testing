@@ -4,7 +4,7 @@ metadata:
   name: playground-deployment
   namespace: dev
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     matchLabels:
       app: mortiz
@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: mortiz-app2
-          image: wil42/playground:v2
+          image: wil42/playground:v1
           ports:
             - containerPort: 8888
